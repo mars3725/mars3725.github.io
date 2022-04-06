@@ -1,0 +1,99 @@
+html {
+    color: white;
+    user-select: none;
+}
+
+body {
+    background-image:-webkit-linear-gradient(60deg, #673AB7 , #2196F3);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    font-size: 4em;
+}
+
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em;
+    font-size: 3em;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+img.profile {
+    width: 250px;
+    border-radius:100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding-right: 20px;
+}
+
+p {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    font-size: 2em;
+}
+
+div.title {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 0;
+}
+
+div.section {
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+div.skills {
+    float: right;
+    height: min-content;
+    margin-right: 10px;
+}
+
+footer {
+    float: left;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    align-content: center;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 32em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img.icon {
+    width: 48px;
+    margin: 10px auto 20px;
+    display: block;
+}
+
+img.icon:hover {
+    filter: brightness(75%);
+}
