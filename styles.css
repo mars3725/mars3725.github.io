@@ -3,6 +3,7 @@ html {
     user-select: none;
     font-family: "Courier New", monospace;
     font-size: calc(min(1vh, 1vw)*2.5);
+    overflow-x: hidden;
 }
 
 body {
