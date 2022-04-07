@@ -2,7 +2,7 @@ html {
     color: white;
     user-select: none;
     font-family: "Courier New", monospace;
-    font-size: max(calc(75vh/25), calc(75vw/25));
+    font-size: calc(min(1vh, 1vw)*2.5);
 }
 
 body {
@@ -11,44 +11,27 @@ body {
     /*background-repeat: no-repeat;*/
     /*background-attachment: fixed;*/
     /*background-size: cover;*/
-    margin: 50px;
+    margin: 2em;
 }
 
 h1 {
     margin-left: auto;
     margin-right: auto;
-    width: 75vw;
+    width: 75%;
     font-size: 3em;
 }
 
 h2 {
     margin-left: auto;
     margin-right: auto;
-    width: 4em;
+    width: 25%;
     font-size: 2em;
     text-align: center;
 }
 
 h3 {
     text-align: center;
-    font-size: 1em;
-}
-
-img.profile {
-    width: 250px;
-    border-radius:100%;
-    margin-left: auto;
-    margin-right: auto;
-    float: left;
-    padding-right: 20px;
-}
-
-p {
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80vw;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 div.title {
@@ -72,14 +55,27 @@ div.section {
     margin-top: 100px;
 }
 
-div.skills {
-    float: right;
-    height: min-content;
-    margin-right: 10px;
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-footer {
+img.profile {
+    width: 33.33%;
+    border-radius:100%;
+    margin-right: 2em;
     float: left;
+}
+
+p {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-size: 2em;
 }
 
 .column {
@@ -100,7 +96,7 @@ footer {
 }
 
 img.icon {
-    width: 48px;
+    width: 25%;
     margin: 10px auto 20px;
     display: block;
 }
@@ -113,14 +109,7 @@ img.icon:focus {
     filter: none;
 }
 
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
 footer {
-    margin: 50px auto 15px auto;
+    margin-top: 2em;
+    font-size: 1em;
 }
