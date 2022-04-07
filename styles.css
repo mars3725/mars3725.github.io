@@ -1,33 +1,37 @@
 html {
     color: white;
     user-select: none;
+    font-family: "Courier New", monospace;
+    font-size: max(calc(75vh/25), calc(75vw/25));
 }
 
 body {
     background-image:-webkit-linear-gradient(60deg, #673AB7 , #2196F3);
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    /*background-position: center 0;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+    margin: 50px;
 }
 
 h1 {
     margin-left: auto;
     margin-right: auto;
-    width: 8em;
-    font-size: 4em;
+    width: 75vw;
+    font-size: 3em;
 }
 
 h2 {
     margin-left: auto;
     margin-right: auto;
     width: 4em;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 }
 
 h3 {
     text-align: center;
+    font-size: 1em;
 }
 
 img.profile {
@@ -44,7 +48,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 80vw;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 div.title {
@@ -52,6 +56,14 @@ div.title {
     justify-content: center;
     height: 100vh;
     margin-top: 0;
+}
+
+div.title > * {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div.section {
@@ -79,7 +91,6 @@ footer {
 .row {
     margin-left: auto;
     margin-right: auto;
-    width: 32em;
 }
 
 .row:after {
@@ -96,4 +107,20 @@ img.icon {
 
 img.icon:hover {
     filter: brightness(75%);
+}
+
+img.icon:focus {
+    filter: none;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+footer {
+    margin: 50px auto 15px auto;
 }
