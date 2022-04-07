@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script>
-  window.ondragstart = function() { return false; }
-</script>
-
 <head>
   <meta charset="UTF-8">
   <title>Matt Mohandiss</title>
@@ -15,9 +11,9 @@
 <body>
 <div class=title>
   <div class="vertical-center">
-    <h1>Hello, I'm</h1>
-    <h1 style="color: #21f3e7">Matt Mohandiss.</h1>
-    <h1><br><br>Mobile Developer.</h1>
+    <h1 id="leftTranslate">Hello, I'm</h1>
+    <h1 id="leftTranslate2" style="color: #21f3e7">Matt Mohandiss.</h1>
+    <h1 id="rightTranslate"><br><br>Mobile Developer.</h1>
   </div>
 </div>
 
@@ -85,3 +81,16 @@
 </body>
 
 </html>
+
+<script>
+  window.ondragstart = function() { return false; }
+
+  document.body.onscroll = function() {
+    const offset = document.documentElement.scrollTop;
+    document.getElementById('leftTranslate').style.transform = `translateX(${-offset}px)`;
+    document.getElementById('leftTranslate2').style.transform = `translateX(${-offset}px)`;
+    document.getElementById('rightTranslate').style.transform = `translateX(${offset}px)`;
+    console.log(offset);
+  };
+
+</script>
