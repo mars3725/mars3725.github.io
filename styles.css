@@ -5,7 +5,7 @@ html {
     font-size: 1vmin;
     overflow-x: hidden;
     max-width: 100%;
-    filter: drop-shadow(1px 3px 5px rgba(0,0,0,0.25));
+    filter: drop-shadow(1px 3px 5px rgba(0,0,0,0.3));
 }
 
 body {
@@ -30,6 +30,8 @@ div.title > * {
 
 div.section {
     margin-bottom: 125px;
+    margin-left: 10px;
+    margin-right: 10px;
     overflow: hidden;
 }
 
@@ -47,7 +49,7 @@ div.section {
         display: block;
         float: none;
         align-content: center;
-        width: 80%;
+        width: 100%;
         padding: 0;
         margin: 2em auto;
     }
@@ -99,15 +101,15 @@ li {
 }
 
 img.profile {
-    width: 10em;
+    width: 40%;
     border-radius: 100%;
     margin: 1em;
     float: left;
 }
 
 img.icon {
-    width: 10em;
-    margin: 1em auto;
+    width: 20%;
+    margin: 0.5em auto;
     display: block;
 }
 
